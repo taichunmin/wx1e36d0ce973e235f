@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "模式设置",
+    "usingComponents": {
+        "comp": "../../comp"
+    }
+}

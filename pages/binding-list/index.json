@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "绑定列表",
+    "usingComponents": {
+        "comp": "../../comp"
+    }
+}

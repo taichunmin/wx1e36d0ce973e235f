@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "外部页面",
+    "usingComponents": {
+        "comp": "../../comp"
+    }
+}

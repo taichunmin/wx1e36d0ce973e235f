@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "音效设置",
+    "usingComponents": {
+        "comp": "../../comp"
+    }
+}

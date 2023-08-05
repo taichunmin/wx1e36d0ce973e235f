@@ -1,0 +1,53 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/game/index",
+        "pages/game-notab/index",
+        "pages/game-data/index",
+        "pages/game-search/index",
+        "pages/user/index",
+        "pages/binding-list/index",
+        "pages/activate/index",
+        "pages/binding-mode/index",
+        "pages/firmware/index",
+        "pages/to-new-firmware/index",
+        "pages/device-info/index",
+        "pages/user-questions/index",
+        "pages/user-set/index",
+        "pages/webview/index",
+        "pages/gogogo/index",
+        "pages/waiting/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "WeChat",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#333333",
+        "selectedColor": "#DA1A1A",
+        "borderStyle": "white",
+        "backgroundColor": "#fff",
+        "list": [
+            {
+                "text": "首页",
+                "pagePath": "pages/index/index",
+                "iconPath": "assets/images/home2.png",
+                "selectedIconPath": "assets/images/home1.png"
+            },
+            {
+                "text": "常见问题",
+                "pagePath": "pages/user-questions/index",
+                "iconPath": "assets/images/help2.png",
+                "selectedIconPath": "assets/images/help1.png"
+            },
+            {
+                "text": "我的",
+                "pagePath": "pages/user/index",
+                "iconPath": "assets/images/user2.png",
+                "selectedIconPath": "assets/images/user1.png"
+            }
+        ]
+    }
+}

@@ -1,0 +1,102 @@
+page {
+    background-color: #32353c;
+}
+
+.game-poster {
+    height: 400rpx;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.game-inner {
+    background-color: #20232a;
+    border-top-left-radius: var(--border-radius-lg);
+    border-top-right-radius: var(--border-radius-lg);
+    margin-top: 380rpx;
+    min-height: 75vh;
+    position: relative;
+}
+
+.game-info {
+    display: flex;
+    position: relative;
+}
+
+.game-info .game-info-image {
+    border-radius: 100%;
+    flex-shrink: 0;
+    height: 200rpx;
+    margin-right: 30rpx;
+    width: 200rpx;
+}
+
+.game-info .game-info-image image {
+    border-radius: inherit;
+}
+
+.game-info .game-info-content {
+    flex: 1 1 auto;
+}
+
+.game-info .game-info-content .game-info-title {
+    color: #fff;
+}
+
+.game-info .game-info-content .game-info-desc {
+    color: var(--gray-6);
+    text-align: justify;
+}
+
+.game-data-cat {
+    text-align: center;
+}
+
+.game-data-cat .catname {
+    padding: 0 30rpx;
+    position: relative;
+}
+
+.game-data-cat:after,.game-data-cat:before {
+    border-top: 1rpx solid #32353c;
+    content: "";
+    display: table-cell;
+    position: relative;
+    top: 20rpx;
+    width: 50%;
+}
+
+.game-data-cat,.sign-others-hr {
+    display: table;
+    position: relative;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.game-data-list .item .media {
+    border: 2rpx solid var(--gray-8);
+}
+
+.game-data-list .item .item-title {
+    color: #fff;
+}
+
+.game-tab {
+    background-color: #151719;
+    border-radius: 50rpx;
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.game-tab .item {
+    border-radius: 50rpx;
+    color: #fff;
+    flex: 1;
+    padding: 20rpx 10rpx;
+    text-align: center;
+}
+
+.game-tab .item.active {
+    background-color: #c61614;
+}

@@ -1,0 +1,25 @@
+page {
+    background-color: #f4f4f4;
+}
+
+.user-poster {
+    position: relative;
+}
+
+.user-bg {
+    display: block;
+    height: 360rpx;
+    width: 100%;
+}
+
+.user-info {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+}
+
+.user-info .flex-avatar .van-image__error,.user-info .flex-avatar .van-image__loading {
+    border-radius: 100%;
+}

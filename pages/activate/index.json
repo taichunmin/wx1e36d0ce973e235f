@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "绑定激活",
+    "usingComponents": {
+        "comp": "../../comp"
+    }
+}

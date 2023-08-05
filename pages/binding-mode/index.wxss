@@ -1,0 +1,22 @@
+page {
+    background-color: #f4f4f4;
+}
+
+.binding-list .item {
+    word-wrap: break-word;
+    flex: 1 1 auto;
+    min-width: 0;
+    position: relative;
+    text-align: center;
+}
+
+.binding-list .item.add {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.binding-list .item.add .item-image {
+    margin: auto;
+}

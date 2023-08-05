@@ -1,0 +1,6 @@
+{
+    "navigationBarTitleText": "设备信息",
+    "usingComponents": {
+        "comp": "../../comp"
+    }
+}
