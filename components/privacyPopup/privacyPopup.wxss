@@ -1,0 +1,58 @@
+.user-privacy-popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40rpx;
+    pointer-events: auto;
+    background-color: rgb(24 24 27/50%);
+    z-index: 9999;
+}
+
+.user-privacy-popup .privacy-popup__hd {
+    font-size: 36rpx;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30rpx;
+}
+
+.user-privacy-popup .privacy-popup__bd {
+    font-size: 26rpx;
+    line-height: 1.75;
+}
+
+.user-privacy-popup .privacy-popup__content {
+    position: relative;
+    padding: 50rpx 40rpx;
+    background-color: #fff;
+    border-radius: 40rpx;
+}
+
+.user-privacy-popup .privacy-popup__tips {
+    color: #ff2a23;
+}
+
+.user-privacy-popup .privacy-popup__ft {
+    margin-top: 40rpx;
+}
+
+.user-privacy-popup .privacy-popup__ft .agree {
+    background: linear-gradient(to right,#ff6034,#ff4636);
+    border: 0;
+    border-radius: 100rpx;
+}
+
+.user-privacy-popup .privacy-popup__ft .disagree {
+    margin-top: 30rpx;
+    background: 0 0;
+    border: 2rpx solid rgb(0 0 0/5%);
+    border-radius: 100rpx;
+}
+
+.user-privacy-popup .privacy-popup__ft .agree:after,.user-privacy-popup .privacy-popup__ft .disagree:after {
+    display: none;
+}

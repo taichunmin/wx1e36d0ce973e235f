@@ -1,164 +1,170 @@
 require("../../@babel/runtime/helpers/Arrayincludes");
 
-var e = require("../../@babel/runtime/helpers/toConsumableArray"), n = require("../../@babel/runtime/helpers/slicedToArray");
+var _toConsumableArray2 = require("../../@babel/runtime/helpers/toConsumableArray");
 
-(wx.webpackJsonp = wx.webpackJsonp || []).push([ [ 32 ], {
-    491: function(e, n, t) {},
-    492: function(e, n, t) {},
-    493: function(e, n, t) {},
-    497: function(t, c, r) {
-        r.r(c);
-        var a = r(8), l = (r(45), r(491), r(14)), i = r(18), s = r(23), o = r(0), u = r(5), d = r(1);
-        var b = function(t) {
-            var c = t.value, r = t.accordion, a = void 0 !== r && r, b = t.border, j = void 0 === b || b, f = t.onOpen, O = t.onClose, h = t.onChange, m = t.style, v = t.className, p = t.children, g = Object(s.a)(t, [ "value", "accordion", "border", "onOpen", "onClose", "onChange", "style", "className", "children" ]), x = Object(u.useState)([]), y = n(x, 2), T = y[0], N = y[1], k = Object(u.useCallback)(function() {
-                var n = [];
-                if (c && !Array.isArray(c)) n.push(c.toString()); else if (c && Array.isArray(c)) {
-                    a && c.length > 1 && console.warn("手风琴模式不支持传多个打开页签");
-                    var t = c.map(function(e) {
+var _slicedToArray2 = require("../../@babel/runtime/helpers/slicedToArray");
+
+(wx["webpackJsonp"] = wx["webpackJsonp"] || []).push([ [ 38 ], {
+    495: function _(e, t, n) {},
+    496: function _(e, t, n) {},
+    497: function _(e, t, n) {},
+    505: function _(e, t, n) {
+        "use strict";
+        n.r(t);
+        var c = n(8), l = (n(45), n(495), n(14)), a = n(18), s = n(24), r = n(0), i = n(5), o = n(1);
+        function d(e) {
+            var t = e.value, _e$accordion = e.accordion, n = _e$accordion === void 0 ? !1 : _e$accordion, _e$border = e.border, c = _e$border === void 0 ? !0 : _e$border, d = e.onOpen, u = e.onClose, b = e.onChange, j = e.style, O = e.className, h = e.children, m = Object(s["a"])(e, [ "value", "accordion", "border", "onOpen", "onClose", "onChange", "style", "className", "children" ]), _Object = Object(i["useState"])([]), _Object2 = _slicedToArray2(_Object, 2), g = _Object2[0], p = _Object2[1], x = Object(i["useCallback"])(function() {
+                var e = [];
+                if (t && !Array.isArray(t)) e.push(t.toString()); else if (t && Array.isArray(t)) {
+                    n && t.length > 1 && console.warn("手风琴模式不支持传多个打开页签");
+                    var _c = t.map(function(e) {
                         return e.toString();
                     });
-                    n = e(t);
+                    e = _toConsumableArray2(_c);
                 }
-                return n;
-            }, [ a, c ]);
-            Object(u.useEffect)(function() {
-                var e = k();
-                N(e);
-            }, [ c ]);
-            var C = function(n, t) {
-                var c = e(T);
-                if (n) {
-                    var r = c.findIndex(function(e) {
+                return e;
+            }, [ n, t ]);
+            Object(i["useEffect"])(function() {
+                var e = x();
+                p(e);
+            }, [ t ]);
+            var f = function f(e, t) {
+                var c = _toConsumableArray2(g);
+                if (e) {
+                    var _e = c.findIndex(function(e) {
                         return e === t;
                     });
-                    c.splice(r, 1), null == O || O({
+                    c.splice(_e, 1), null === u || void 0 === u || u({
                         detail: t
                     });
-                } else a ? c = [ t ] : c.push(t), null == f || f({
+                } else n ? c = [ t ] : c.push(t), null === d || void 0 === d || d({
                     detail: t
                 });
-                N(c), null == h || h({
+                p(c), null === b || void 0 === b || b({
                     detail: c
                 });
-            }, _ = Object(u.useMemo)(function() {
-                return u.Children.map(p, function(e, n) {
-                    return Object(u.cloneElement)(e, {
-                        isOpen: T.includes(e.props.name),
-                        handleToggle: function(e, n) {
-                            return C(e, n);
+            }, v = Object(i["useMemo"])(function() {
+                return i["Children"].map(h, function(e, t) {
+                    return Object(i["cloneElement"])(e, {
+                        isOpen: g.includes(e.props.name),
+                        handleToggle: function handleToggle(e, t) {
+                            return f(e, t);
                         },
-                        index: n
+                        index: t
                     });
                 });
-            }, [ p, T, C ]);
-            return Object(o.jsx)(d.g, Object(i.a)(Object(l.a)({
-                className: " van-collapse " + (j ? "van-hairline--top-bottom" : "") + " " + (v || ""),
-                style: m
-            }, g), {
-                children: _
+            }, [ h, g, f ]);
+            return Object(r["jsx"])(o["g"], Object(a["a"])(Object(l["a"])({
+                className: " van-collapse " + (c ? "van-hairline--top-bottom" : "") + " " + (O || ""),
+                style: j
+            }, m), {
+                children: v
             }));
-        }, j = (r(64), r(65), r(111), r(492), r(2)), f = r(12), O = r(119), h = r(39), m = 0;
-        var v = function(e) {
-            var t = e.size, c = e.name, r = void 0 === c ? null : c, a = e.title, b = void 0 === a ? "" : a, v = e.value, p = void 0 === v ? "" : v, g = e.icon, x = e.label, y = e.disabled, T = void 0 !== y && y, N = e.clickable, k = void 0 !== N && N, C = e.border, _ = void 0 === C || C, I = e.isLink, S = void 0 === I || I, w = e.renderTitle, A = e.renderIcon, R = e.renderRightIcon, q = e.renderValue, E = e.style, L = e.className, P = e.children, z = e.index, F = e.isOpen, J = e.handleToggle, M = Object(s.a)(e, [ "size", "name", "title", "value", "icon", "label", "disabled", "clickable", "border", "isLink", "renderTitle", "renderIcon", "renderRightIcon", "renderValue", "style", "className", "children", "index", "isOpen", "handleToggle" ]), V = Object(u.useState)("auto"), B = n(V, 2), G = B[0], H = B[1], Q = Object(u.useState)(!1), D = n(Q, 2), K = D[0], U = D[1], W = Object(u.useState)(m++), X = n(W, 1)[0], Y = Object(u.useRef)(null), Z = Object(u.useState)(-1), $ = n(Z, 2), ee = $[0], ne = $[1], te = Object(u.useRef)(!0);
-            Object(u.useEffect)(function() {
+        }
+        var u = d, b = (n(65), n(66), n(111), n(496), n(2)), j = n(12), O = n(119), h = n(39);
+        var m = 0;
+        function g(e) {
+            var t = e.size, _e$name = e.name, n = _e$name === void 0 ? null : _e$name, _e$title = e.title, c = _e$title === void 0 ? "" : _e$title, _e$value = e.value, d = _e$value === void 0 ? "" : _e$value, u = e.icon, g = e.label, _e$disabled = e.disabled, p = _e$disabled === void 0 ? !1 : _e$disabled, _e$clickable = e.clickable, x = _e$clickable === void 0 ? !1 : _e$clickable, _e$border2 = e.border, f = _e$border2 === void 0 ? !0 : _e$border2, _e$isLink = e.isLink, v = _e$isLink === void 0 ? !0 : _e$isLink, y = e.renderTitle, N = e.renderIcon, T = e.renderRightIcon, k = e.renderValue, C = e.style, _ = e.className, I = e.children, S = e.index, w = e.isOpen, R = e.handleToggle, A = Object(s["a"])(e, [ "size", "name", "title", "value", "icon", "label", "disabled", "clickable", "border", "isLink", "renderTitle", "renderIcon", "renderRightIcon", "renderValue", "style", "className", "children", "index", "isOpen", "handleToggle" ]), _Object3 = Object(i["useState"])("auto"), _Object4 = _slicedToArray2(_Object3, 2), E = _Object4[0], L = _Object4[1], _Object5 = Object(i["useState"])(!1), _Object6 = _slicedToArray2(_Object5, 2), P = _Object6[0], z = _Object6[1], _Object7 = Object(i["useState"])(m++), _Object8 = _slicedToArray2(_Object7, 1), F = _Object8[0], J = Object(i["useRef"])(null), _Object9 = Object(i["useState"])(-1), _Object10 = _slicedToArray2(_Object9, 2), M = _Object10[0], V = _Object10[1], q = Object(i["useRef"])(!0);
+            Object(i["useEffect"])(function() {
                 setTimeout(function() {
-                    var e = ".van-collapse >>> #content-class" + X;
-                    Object(O.a)(null, "" + e).then(function(e) {
-                        e && (ne(e.height), Object(j.nextTick)(function() {
-                            U(!0);
+                    var e = ".van-collapse >>> #content-class" + F;
+                    Object(O["a"])(null, "" + e).then(function(e) {
+                        e && (V(e.height), Object(b["nextTick"])(function() {
+                            z(!0);
                         }));
                     });
                 }, 33.33);
-            }, [ P ]), Object(u.useEffect)(function() {
-                -1 !== ee ? (Y.current && clearTimeout(Y.current), F ? (H(ee + "px"), te.current = !1, 
-                Y.current = setTimeout(function() {
-                    H("auto");
-                }, 200)) : te.current || (H(ee + "px"), Y.current = setTimeout(function() {
-                    H("0px");
-                }, 200))) : H("0px");
-            }, [ F, ee, K ]);
-            var ce = Object(u.useCallback)(function() {
-                T || (te.current = !1, J && J(F, r));
-            }, [ J, T, F, r ]);
-            return Object(o.jsxs)(d.g, Object(i.a)(Object(l.a)({
-                className: "van-collapse-item  " + (0 !== z ? "van-hairline--top" : "") + " " + (L || ""),
-                style: E
-            }, M), {
-                children: [ Object(o.jsx)(h.b, {
-                    title: b,
-                    icon: g,
-                    value: p,
-                    label: x,
-                    isLink: S,
-                    clickable: k,
+            }, [ I ]), Object(i["useEffect"])(function() {
+                -1 !== M ? (J.current && clearTimeout(J.current), w ? (L(M + "px"), q.current = !1, 
+                J.current = setTimeout(function() {
+                    L("auto");
+                }, 200)) : q.current || (L(M + "px"), J.current = setTimeout(function() {
+                    L("0px");
+                }, 200))) : L("0px");
+            }, [ w, M, P ]);
+            var B = Object(i["useCallback"])(function() {
+                p || (q.current = !1, R && R(w, n));
+            }, [ R, p, w, n ]);
+            return Object(r["jsxs"])(o["g"], Object(a["a"])(Object(l["a"])({
+                className: "van-collapse-item  " + (0 !== S ? "van-hairline--top" : "") + " " + (_ || ""),
+                style: C
+            }, A), {
+                children: [ Object(r["jsx"])(h["b"], {
+                    title: c,
+                    icon: u,
+                    value: d,
+                    label: g,
+                    isLink: v,
+                    clickable: x,
                     size: t,
-                    border: _ && F,
-                    className: f.b("collapse-item__title", {
-                        disabled: T,
-                        expanded: F
+                    border: f && w,
+                    className: j["b"]("collapse-item__title", {
+                        disabled: p,
+                        expanded: w
                     }) + " van-cell",
-                    onClick: ce,
-                    renderTitle: Object(o.jsx)(o.Fragment, {
-                        children: w
+                    onClick: B,
+                    renderTitle: Object(r["jsx"])(r["Fragment"], {
+                        children: y
                     }),
-                    renderIcon: Object(o.jsx)(o.Fragment, {
-                        children: A
+                    renderIcon: Object(r["jsx"])(r["Fragment"], {
+                        children: N
                     }),
-                    renderRightIcon: Object(o.jsx)(o.Fragment, {
-                        children: R
+                    renderRightIcon: Object(r["jsx"])(r["Fragment"], {
+                        children: T
                     }),
-                    children: q
-                }), Object(o.jsx)(d.g, {
+                    children: k
+                }), Object(r["jsx"])(o["g"], {
                     style: {
-                        height: K ? "auto" : 0,
+                        height: P ? "auto" : 0,
                         overflow: "hidden"
                     },
-                    children: Object(o.jsx)(d.g, {
+                    children: Object(r["jsx"])(o["g"], {
                         className: "van-collapse-item__content content-class",
                         style: {
-                            height: G
+                            height: E
                         },
-                        children: Object(o.jsx)(d.g, {
-                            id: "content-class" + X,
+                        children: Object(r["jsx"])(o["g"], {
+                            id: "content-class" + F,
                             className: "van-collapse-item__content_wrapper",
-                            children: P
+                            children: I
                         })
                     })
                 }) ]
             }));
-        }, p = (r(92), r(44)), g = (r(493), r(270)), x = r(29), y = r(26), T = r(126), N = function() {
-            var e = Object(g.a)(function() {
-                return x.b.niceJsonMiniProgramV1QuestionsGet();
-            }), n = e.data;
-            if (e.loading || !n) return Object(o.jsx)(y.a, {
+        }
+        var p = g, x = (n(93), n(44)), f = (n(497), n(272)), v = n(29), y = n(26), N = n(126), T = function T() {
+            var e = Object(f["a"])(function() {
+                return v["b"].niceJsonMiniProgramV1QuestionsGet();
+            }), t = e.data, n = e.loading;
+            if (n || !t) return Object(r["jsx"])(y["a"], {
                 isPublic: !0,
                 className: "d-flex flex-center justify-center py-4",
-                children: Object(o.jsx)(p.b, {})
+                children: Object(r["jsx"])(x["b"], {})
             });
-            var t = n.data.data.list;
-            return Object(o.jsx)(y.a, {
-                children: Object(o.jsx)(d.g, {
+            var c = t.data.data.list;
+            return Object(r["jsx"])(y["a"], {
+                children: Object(r["jsx"])(o["g"], {
                     className: "pb-4",
-                    children: t.filter(function(e) {
+                    children: c.filter(function(e) {
                         return null !== e;
-                    }).map(function(e, n) {
-                        var t;
-                        return Object(o.jsxs)(b, {
+                    }).map(function(e, t) {
+                        var n;
+                        return Object(r["jsxs"])(u, {
                             accordion: !0,
                             border: !0,
                             className: "px-3 pt-3",
-                            children: [ Object(o.jsxs)(d.g, {
+                            children: [ Object(r["jsxs"])(o["g"], {
                                 className: "d-flex text-lg text-dark mb-2 mx-1",
-                                children: [ Object(o.jsx)(d.g, {
+                                children: [ Object(r["jsx"])(o["g"], {
                                     className: "icon-cat me-1"
-                                }), null == e || null === (t = e[0]) || void 0 === t || null === (t = t.category) || void 0 === t || null === (t = t[0]) || void 0 === t ? void 0 : t.name ]
-                            }), e.map(function(e, n) {
-                                return Object(o.jsx)(v, {
+                                }), null === e || void 0 === e || null === (n = e[0]) || void 0 === n || null === (n = n.category) || void 0 === n || null === (n = n[0]) || void 0 === n ? void 0 : n.name ]
+                            }), e.map(function(e, t) {
+                                return Object(r["jsx"])(p, {
                                     title: e.title,
-                                    name: n,
-                                    children: Object(o.jsx)(d.g, {
+                                    name: t,
+                                    children: Object(r["jsx"])(o["g"], {
                                         dangerouslySetInnerHTML: {
-                                            __html: Object(T.a)(e.content)
+                                            __html: Object(N["a"])(e.content)
                                         }
                                     })
                                 });
@@ -167,13 +173,13 @@ var e = require("../../@babel/runtime/helpers/toConsumableArray"), n = require("
                     })
                 })
             });
+        }, k = {
+            navigationBarTitleText: "常见问题"
         };
-        Page(Object(a.createPageConfig)(N, "pages/user-questions/index", {
+        Page(Object(c["createPageConfig"])(T, "pages/user-questions/index", {
             root: {
                 cn: []
             }
-        }, {
-            navigationBarTitleText: "常见问题"
-        } || {})), c.default = N;
+        }, k || {})), t["default"] = T;
     }
-}, [ [ 497, 0, 1, 2, 3 ] ] ]);
+}, [ [ 505, 0, 1, 2, 3 ] ] ]);

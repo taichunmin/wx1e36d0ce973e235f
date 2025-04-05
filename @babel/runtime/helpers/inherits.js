@@ -8,6 +8,8 @@ function _inherits(e, t) {
             writable: !0,
             configurable: !0
         }
+    }), Object.defineProperty(e, "prototype", {
+        writable: !1
     }), t && setPrototypeOf(e, t);
 }
 

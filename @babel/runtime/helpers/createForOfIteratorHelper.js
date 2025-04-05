@@ -1,8 +1,8 @@
 var unsupportedIterableToArray = require("./unsupportedIterableToArray");
 
 function _createForOfIteratorHelper(r, e) {
-    var t;
-    if ("undefined" == typeof Symbol || null == r[Symbol.iterator]) {
+    var t = "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"];
+    if (!t) {
         if (Array.isArray(r) || (t = unsupportedIterableToArray(r)) || e && r && "number" == typeof r.length) {
             t && (r = t);
             var n = 0, o = function() {};
@@ -27,7 +27,7 @@ function _createForOfIteratorHelper(r, e) {
     var a, u = !0, i = !1;
     return {
         s: function() {
-            t = r[Symbol.iterator]();
+            t = t.call(r);
         },
         n: function() {
             var r = t.next();

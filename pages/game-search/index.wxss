@@ -1,22 +1,20 @@
 .van-search {
+    display: flex;
     align-items: center;
     box-sizing: border-box;
     padding: 20rpx 24rpx;
     padding: var(--search-padding,20rpx 24rpx);
 }
 
-.van-search,.van-search__content {
-    display: flex;
-}
-
 .van-search__content {
-    background-color: #f7f8fa;
-    background-color: var(--search-background-color,#f7f8fa);
-    border-radius: 4rpx;
-    border-radius: var(--border-radius-sm,4rpx);
+    display: flex;
     flex: 1;
     padding-left: 24rpx;
     padding-left: var(--padding-sm,24rpx);
+    border-radius: 4rpx;
+    border-radius: var(--border-radius-sm,4rpx);
+    background-color: #f7f8fa;
+    background-color: var(--search-background-color,#f7f8fa);
 }
 
 .van-search__content--round {
@@ -25,14 +23,14 @@
 }
 
 .van-search__label {
-    color: #323233;
-    color: var(--search-label-color,#323233);
-    font-size: 28rpx;
-    font-size: var(--search-label-font-size,28rpx);
-    line-height: 68rpx;
-    line-height: var(--search-input-height,68rpx);
     padding: 0 10rpx;
     padding: var(--search-label-padding,0 10rpx);
+    font-size: 28rpx;
+    font-size: var(--search-label-font-size, 28rpx);
+    line-height: 68rpx;
+    line-height: var(--search-input-height, 68rpx);
+    color: #323233;
+    color: var(--search-label-color,#323233);
 }
 
 .van-search__field {
@@ -49,14 +47,14 @@
 }
 
 .van-search__action {
-    color: #323233;
-    color: var(--search-action-text-color,#323233);
-    font-size: 28rpx;
-    font-size: var(--search-action-font-size,28rpx);
-    line-height: 68rpx;
-    line-height: var(--search-input-height,68rpx);
     padding: 0 16rpx;
     padding: var(--search-action-padding,0 16rpx);
+    font-size: 28rpx;
+    font-size: var(--search-action-font-size, 28rpx);
+    line-height: 68rpx;
+    line-height: var(--search-input-height, 68rpx);
+    color: #323233;
+    color: var(--search-action-text-color,#323233);
 }
 
 .van-search__action--hover {

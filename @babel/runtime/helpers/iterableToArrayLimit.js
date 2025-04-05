@@ -1,20 +1,23 @@
-function _iterableToArrayLimit(r, t) {
-    if ("undefined" != typeof Symbol && Symbol.iterator in Object(r)) {
-        var e = [], i = !0, o = !1, l = void 0;
+function _iterableToArrayLimit(r, e) {
+    var l = null == r ? null : "undefined" != typeof Symbol && r[Symbol.iterator] || r["@@iterator"];
+    if (null != l) {
+        var t, n, i, a, u = [], o = !0, f = !1;
         try {
-            for (var n, a = r[Symbol.iterator](); !(i = (n = a.next()).done) && (e.push(n.value), 
-            !t || e.length !== t); i = !0) ;
+            if (i = (l = l.call(r)).next, 0 === e) {
+                if (Object(l) !== l) return;
+                o = !1;
+            } else for (;!(o = (t = i.call(l)).done) && (u.push(t.value), u.length !== e); o = !0) ;
         } catch (r) {
             r = VM2_INTERNAL_STATE_DO_NOT_USE_OR_PROGRAM_WILL_FAIL.handleException(r);
-            o = !0, l = r;
+            f = !0, n = r;
         } finally {
             try {
-                i || null == a.return || a.return();
+                if (!o && null != l.return && (a = l.return(), Object(a) !== a)) return;
             } finally {
-                if (o) throw l;
+                if (f) throw n;
             }
         }
-        return e;
+        return u;
     }
 }
 

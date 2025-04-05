@@ -5,6 +5,11 @@
 <template name="tmpl_14_container">
     <template is="{{xs.a(14,i.nn,l)}}" data="{{ i:i,cid:14,l:xs.f(l,i.nn) }}"></template>
 </template>
+<template name="tmpl_14_privacy-popup">
+    <privacy-popup data-sid="{{i.sid}}" id="{{i.uid||i.sid}}">
+        <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" wx:for="{{i.cn}}" wx:key="sid"></template>
+    </privacy-popup>
+</template>
 <template name="tmpl_14_6">
     <text bindtap="eh" class="{{i.cl}}" data-sid="{{i.sid}}" decode="{{xs.b(i.p0,!1)}}" id="{{i.uid||i.sid}}" selectable="{{xs.b(i.p1,!1)}}" space="{{i.p2}}" style="{{i.st}}" userSelect="{{xs.b(i.p3,false)}}">
         <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" wx:for="{{i.cn}}" wx:key="sid"></template>
@@ -32,6 +37,11 @@
 </template>
 <template name="tmpl_13_container">
     <template is="{{xs.a(13,i.nn,l)}}" data="{{ i:i,cid:13,l:xs.f(l,i.nn) }}"></template>
+</template>
+<template name="tmpl_13_privacy-popup">
+    <privacy-popup data-sid="{{i.sid}}" id="{{i.uid||i.sid}}">
+        <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" wx:for="{{i.cn}}" wx:key="sid"></template>
+    </privacy-popup>
 </template>
 <template name="tmpl_13_6">
     <text bindtap="eh" class="{{i.cl}}" data-sid="{{i.sid}}" decode="{{xs.b(i.p0,!1)}}" id="{{i.uid||i.sid}}" selectable="{{xs.b(i.p1,!1)}}" space="{{i.p2}}" style="{{i.st}}" userSelect="{{xs.b(i.p3,false)}}">
@@ -61,6 +71,11 @@
 <template name="tmpl_12_container">
     <template is="{{xs.a(12,i.nn,l)}}" data="{{ i:i,cid:12,l:xs.f(l,i.nn) }}"></template>
 </template>
+<template name="tmpl_12_privacy-popup">
+    <privacy-popup data-sid="{{i.sid}}" id="{{i.uid||i.sid}}">
+        <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" wx:for="{{i.cn}}" wx:key="sid"></template>
+    </privacy-popup>
+</template>
 <template name="tmpl_12_6">
     <text bindtap="eh" class="{{i.cl}}" data-sid="{{i.sid}}" decode="{{xs.b(i.p0,!1)}}" id="{{i.uid||i.sid}}" selectable="{{xs.b(i.p1,!1)}}" space="{{i.p2}}" style="{{i.st}}" userSelect="{{xs.b(i.p3,false)}}">
         <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" wx:for="{{i.cn}}" wx:key="sid"></template>
@@ -88,6 +103,11 @@
 </template>
 <template name="tmpl_11_container">
     <template is="{{xs.a(11,i.nn,l)}}" data="{{ i:i,cid:11,l:xs.f(l,i.nn) }}"></template>
+</template>
+<template name="tmpl_11_privacy-popup">
+    <privacy-popup data-sid="{{i.sid}}" id="{{i.uid||i.sid}}">
+        <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" wx:for="{{i.cn}}" wx:key="sid"></template>
+    </privacy-popup>
 </template>
 <template name="tmpl_11_6">
     <text bindtap="eh" class="{{i.cl}}" data-sid="{{i.sid}}" decode="{{xs.b(i.p0,!1)}}" id="{{i.uid||i.sid}}" selectable="{{xs.b(i.p1,!1)}}" space="{{i.p2}}" style="{{i.st}}" userSelect="{{xs.b(i.p3,false)}}">
@@ -117,6 +137,11 @@
 <template name="tmpl_10_container">
     <template is="{{xs.a(10,i.nn,l)}}" data="{{ i:i,cid:10,l:xs.f(l,i.nn) }}"></template>
 </template>
+<template name="tmpl_10_privacy-popup">
+    <privacy-popup data-sid="{{i.sid}}" id="{{i.uid||i.sid}}">
+        <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" wx:for="{{i.cn}}" wx:key="sid"></template>
+    </privacy-popup>
+</template>
 <template name="tmpl_10_6">
     <text bindtap="eh" class="{{i.cl}}" data-sid="{{i.sid}}" decode="{{xs.b(i.p0,!1)}}" id="{{i.uid||i.sid}}" selectable="{{xs.b(i.p1,!1)}}" space="{{i.p2}}" style="{{i.st}}" userSelect="{{xs.b(i.p3,false)}}">
         <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" wx:for="{{i.cn}}" wx:key="sid"></template>
@@ -144,6 +169,11 @@
 </template>
 <template name="tmpl_9_container">
     <template is="{{xs.a(9,i.nn,l)}}" data="{{ i:i,cid:9,l:xs.f(l,i.nn) }}"></template>
+</template>
+<template name="tmpl_9_privacy-popup">
+    <privacy-popup data-sid="{{i.sid}}" id="{{i.uid||i.sid}}">
+        <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" wx:for="{{i.cn}}" wx:key="sid"></template>
+    </privacy-popup>
 </template>
 <template name="tmpl_9_6">
     <text bindtap="eh" class="{{i.cl}}" data-sid="{{i.sid}}" decode="{{xs.b(i.p0,!1)}}" id="{{i.uid||i.sid}}" selectable="{{xs.b(i.p1,!1)}}" space="{{i.p2}}" style="{{i.st}}" userSelect="{{xs.b(i.p3,false)}}">
@@ -173,6 +203,11 @@
 <template name="tmpl_8_container">
     <template is="{{xs.a(8,i.nn,l)}}" data="{{ i:i,cid:8,l:xs.f(l,i.nn) }}"></template>
 </template>
+<template name="tmpl_8_privacy-popup">
+    <privacy-popup data-sid="{{i.sid}}" id="{{i.uid||i.sid}}">
+        <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" wx:for="{{i.cn}}" wx:key="sid"></template>
+    </privacy-popup>
+</template>
 <template name="tmpl_8_6">
     <text bindtap="eh" class="{{i.cl}}" data-sid="{{i.sid}}" decode="{{xs.b(i.p0,!1)}}" id="{{i.uid||i.sid}}" selectable="{{xs.b(i.p1,!1)}}" space="{{i.p2}}" style="{{i.st}}" userSelect="{{xs.b(i.p3,false)}}">
         <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" wx:for="{{i.cn}}" wx:key="sid"></template>
@@ -200,6 +235,11 @@
 </template>
 <template name="tmpl_7_container">
     <template is="{{xs.a(7,i.nn,l)}}" data="{{ i:i,cid:7,l:xs.f(l,i.nn) }}"></template>
+</template>
+<template name="tmpl_7_privacy-popup">
+    <privacy-popup data-sid="{{i.sid}}" id="{{i.uid||i.sid}}">
+        <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" wx:for="{{i.cn}}" wx:key="sid"></template>
+    </privacy-popup>
 </template>
 <template name="tmpl_7_6">
     <text bindtap="eh" class="{{i.cl}}" data-sid="{{i.sid}}" decode="{{xs.b(i.p0,!1)}}" id="{{i.uid||i.sid}}" selectable="{{xs.b(i.p1,!1)}}" space="{{i.p2}}" style="{{i.st}}" userSelect="{{xs.b(i.p3,false)}}">
@@ -229,6 +269,11 @@
 <template name="tmpl_6_container">
     <template is="{{xs.a(6,i.nn,l)}}" data="{{ i:i,cid:6,l:xs.f(l,i.nn) }}"></template>
 </template>
+<template name="tmpl_6_privacy-popup">
+    <privacy-popup data-sid="{{i.sid}}" id="{{i.uid||i.sid}}">
+        <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" wx:for="{{i.cn}}" wx:key="sid"></template>
+    </privacy-popup>
+</template>
 <template name="tmpl_6_6">
     <text bindtap="eh" class="{{i.cl}}" data-sid="{{i.sid}}" decode="{{xs.b(i.p0,!1)}}" id="{{i.uid||i.sid}}" selectable="{{xs.b(i.p1,!1)}}" space="{{i.p2}}" style="{{i.st}}" userSelect="{{xs.b(i.p3,false)}}">
         <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" wx:for="{{i.cn}}" wx:key="sid"></template>
@@ -256,6 +301,11 @@
 </template>
 <template name="tmpl_5_container">
     <template is="{{xs.a(5,i.nn,l)}}" data="{{ i:i,cid:5,l:xs.f(l,i.nn) }}"></template>
+</template>
+<template name="tmpl_5_privacy-popup">
+    <privacy-popup data-sid="{{i.sid}}" id="{{i.uid||i.sid}}">
+        <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" wx:for="{{i.cn}}" wx:key="sid"></template>
+    </privacy-popup>
 </template>
 <template name="tmpl_5_6">
     <text bindtap="eh" class="{{i.cl}}" data-sid="{{i.sid}}" decode="{{xs.b(i.p0,!1)}}" id="{{i.uid||i.sid}}" selectable="{{xs.b(i.p1,!1)}}" space="{{i.p2}}" style="{{i.st}}" userSelect="{{xs.b(i.p3,false)}}">
@@ -290,6 +340,11 @@
 <template name="tmpl_4_container">
     <template is="{{xs.a(4,i.nn,l)}}" data="{{ i:i,cid:4,l:xs.f(l,i.nn) }}"></template>
 </template>
+<template name="tmpl_4_privacy-popup">
+    <privacy-popup data-sid="{{i.sid}}" id="{{i.uid||i.sid}}">
+        <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" wx:for="{{i.cn}}" wx:key="sid"></template>
+    </privacy-popup>
+</template>
 <template name="tmpl_4_6">
     <text bindtap="eh" class="{{i.cl}}" data-sid="{{i.sid}}" decode="{{xs.b(i.p0,!1)}}" id="{{i.uid||i.sid}}" selectable="{{xs.b(i.p1,!1)}}" space="{{i.p2}}" style="{{i.st}}" userSelect="{{xs.b(i.p3,false)}}">
         <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" wx:for="{{i.cn}}" wx:key="sid"></template>
@@ -322,6 +377,11 @@
 </template>
 <template name="tmpl_3_container">
     <template is="{{xs.a(3,i.nn,l)}}" data="{{ i:i,cid:3,l:xs.f(l,i.nn) }}"></template>
+</template>
+<template name="tmpl_3_privacy-popup">
+    <privacy-popup data-sid="{{i.sid}}" id="{{i.uid||i.sid}}">
+        <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" wx:for="{{i.cn}}" wx:key="sid"></template>
+    </privacy-popup>
 </template>
 <template name="tmpl_3_52">
     <scroll-view animation="{{i.p0}}" bindanimationend="eh" bindanimationiteration="eh" bindanimationstart="eh" binddragend="eh" binddragging="eh" binddragstart="eh" bindlongpress="eh" bindrefresherabort="eh" bindrefresherpulling="eh" bindrefresherrefresh="eh" bindrefresherrestore="eh" bindrefresherwillrefresh="eh" bindscroll="eh" bindscrollend="eh" bindscrollstart="eh" bindscrolltolower="eh" bindscrolltoupper="eh" bindtap="eh" bindtouchcancel="eh" bindtouchend="eh" bindtouchmove="eh" bindtouchstart="eh" bindtransitionend="eh" bounces="{{xs.b(i.p1,true)}}" cacheExtent="{{xs.b(i.p2,0)}}" class="{{i.cl}}" data-sid="{{i.sid}}" enableBackToTop="{{xs.b(i.p3,!1)}}" enableFlex="{{xs.b(i.p4,false)}}" enhanced="{{xs.b(i.p5,false)}}" eventPassive="{{xs.b(i.p6,false)}}" fastDeceleration="{{xs.b(i.p7,false)}}" id="{{i.uid||i.sid}}" lowerThreshold="{{xs.b(i.p8,50)}}" pagingEnabled="{{xs.b(i.p9,false)}}" refresherBackground="{{xs.b(i.p10,'#FFF')}}" refresherDefaultStyle="{{xs.b(i.p11,'black')}}" refresherEnabled="{{xs.b(i.p12,false)}}" refresherThreshold="{{xs.b(i.p13,45)}}" refresherTriggered="{{xs.b(i.p14,false)}}" reverse="{{xs.b(i.p15,false)}}" scrollAnchoring="{{xs.b(i.p16,false)}}" scrollIntoView="{{i.p17}}" scrollIntoViewAlignment="{{xs.b(i.p18,'start')}}" scrollIntoViewWithinExtent="{{xs.b(i.p19,false)}}" scrollLeft="{{i.p20}}" scrollTop="{{i.p21}}" scrollWithAnimation="{{xs.b(i.p22,!1)}}" scrollX="{{xs.b(i.p23,!1)}}" scrollY="{{xs.b(i.p24,!1)}}" showScrollbar="{{xs.b(i.p25,true)}}" style="{{i.st}}" type="{{xs.b(i.p26,'list')}}" upperThreshold="{{xs.b(i.p27,50)}}">
@@ -361,6 +421,11 @@
 <template name="tmpl_2_container">
     <template is="{{xs.a(2,i.nn,l)}}" data="{{ i:i,cid:2,l:xs.f(l,i.nn) }}"></template>
 </template>
+<template name="tmpl_2_privacy-popup">
+    <privacy-popup data-sid="{{i.sid}}" id="{{i.uid||i.sid}}">
+        <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" wx:for="{{i.cn}}" wx:key="sid"></template>
+    </privacy-popup>
+</template>
 <template name="tmpl_2_52">
     <scroll-view animation="{{i.p0}}" bindanimationend="eh" bindanimationiteration="eh" bindanimationstart="eh" binddragend="eh" binddragging="eh" binddragstart="eh" bindlongpress="eh" bindrefresherabort="eh" bindrefresherpulling="eh" bindrefresherrefresh="eh" bindrefresherrestore="eh" bindrefresherwillrefresh="eh" bindscroll="eh" bindscrollend="eh" bindscrollstart="eh" bindscrolltolower="eh" bindscrolltoupper="eh" bindtap="eh" bindtouchcancel="eh" bindtouchend="eh" bindtouchmove="eh" bindtouchstart="eh" bindtransitionend="eh" bounces="{{xs.b(i.p1,true)}}" cacheExtent="{{xs.b(i.p2,0)}}" class="{{i.cl}}" data-sid="{{i.sid}}" enableBackToTop="{{xs.b(i.p3,!1)}}" enableFlex="{{xs.b(i.p4,false)}}" enhanced="{{xs.b(i.p5,false)}}" eventPassive="{{xs.b(i.p6,false)}}" fastDeceleration="{{xs.b(i.p7,false)}}" id="{{i.uid||i.sid}}" lowerThreshold="{{xs.b(i.p8,50)}}" pagingEnabled="{{xs.b(i.p9,false)}}" refresherBackground="{{xs.b(i.p10,'#FFF')}}" refresherDefaultStyle="{{xs.b(i.p11,'black')}}" refresherEnabled="{{xs.b(i.p12,false)}}" refresherThreshold="{{xs.b(i.p13,45)}}" refresherTriggered="{{xs.b(i.p14,false)}}" reverse="{{xs.b(i.p15,false)}}" scrollAnchoring="{{xs.b(i.p16,false)}}" scrollIntoView="{{i.p17}}" scrollIntoViewAlignment="{{xs.b(i.p18,'start')}}" scrollIntoViewWithinExtent="{{xs.b(i.p19,false)}}" scrollLeft="{{i.p20}}" scrollTop="{{i.p21}}" scrollWithAnimation="{{xs.b(i.p22,!1)}}" scrollX="{{xs.b(i.p23,!1)}}" scrollY="{{xs.b(i.p24,!1)}}" showScrollbar="{{xs.b(i.p25,true)}}" style="{{i.st}}" type="{{xs.b(i.p26,'list')}}" upperThreshold="{{xs.b(i.p27,50)}}">
         <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" wx:for="{{i.cn}}" wx:key="sid"></template>
@@ -399,6 +464,11 @@
 <template name="tmpl_1_container">
     <template is="{{xs.a(1,i.nn,l)}}" data="{{ i:i,cid:1,l:xs.f(l,i.nn) }}"></template>
 </template>
+<template name="tmpl_1_privacy-popup">
+    <privacy-popup data-sid="{{i.sid}}" id="{{i.uid||i.sid}}">
+        <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" wx:for="{{i.cn}}" wx:key="sid"></template>
+    </privacy-popup>
+</template>
 <template name="tmpl_1_52">
     <scroll-view animation="{{i.p0}}" bindanimationend="eh" bindanimationiteration="eh" bindanimationstart="eh" binddragend="eh" binddragging="eh" binddragstart="eh" bindlongpress="eh" bindrefresherabort="eh" bindrefresherpulling="eh" bindrefresherrefresh="eh" bindrefresherrestore="eh" bindrefresherwillrefresh="eh" bindscroll="eh" bindscrollend="eh" bindscrollstart="eh" bindscrolltolower="eh" bindscrolltoupper="eh" bindtap="eh" bindtouchcancel="eh" bindtouchend="eh" bindtouchmove="eh" bindtouchstart="eh" bindtransitionend="eh" bounces="{{xs.b(i.p1,true)}}" cacheExtent="{{xs.b(i.p2,0)}}" class="{{i.cl}}" data-sid="{{i.sid}}" enableBackToTop="{{xs.b(i.p3,!1)}}" enableFlex="{{xs.b(i.p4,false)}}" enhanced="{{xs.b(i.p5,false)}}" eventPassive="{{xs.b(i.p6,false)}}" fastDeceleration="{{xs.b(i.p7,false)}}" id="{{i.uid||i.sid}}" lowerThreshold="{{xs.b(i.p8,50)}}" pagingEnabled="{{xs.b(i.p9,false)}}" refresherBackground="{{xs.b(i.p10,'#FFF')}}" refresherDefaultStyle="{{xs.b(i.p11,'black')}}" refresherEnabled="{{xs.b(i.p12,false)}}" refresherThreshold="{{xs.b(i.p13,45)}}" refresherTriggered="{{xs.b(i.p14,false)}}" reverse="{{xs.b(i.p15,false)}}" scrollAnchoring="{{xs.b(i.p16,false)}}" scrollIntoView="{{i.p17}}" scrollIntoViewAlignment="{{xs.b(i.p18,'start')}}" scrollIntoViewWithinExtent="{{xs.b(i.p19,false)}}" scrollLeft="{{i.p20}}" scrollTop="{{i.p21}}" scrollWithAnimation="{{xs.b(i.p22,!1)}}" scrollX="{{xs.b(i.p23,!1)}}" scrollY="{{xs.b(i.p24,!1)}}" showScrollbar="{{xs.b(i.p25,true)}}" style="{{i.st}}" type="{{xs.b(i.p26,'list')}}" upperThreshold="{{xs.b(i.p27,50)}}">
         <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" wx:for="{{i.cn}}" wx:key="sid"></template>
@@ -436,6 +506,11 @@
 </template>
 <template name="tmpl_0_container">
     <template is="{{xs.a(0,i.nn,l)}}" data="{{ i:i,cid:0,l:xs.f(l,i.nn) }}"></template>
+</template>
+<template name="tmpl_0_privacy-popup">
+    <privacy-popup data-sid="{{i.sid}}" id="{{i.uid||i.sid}}">
+        <template is="{{xs.e(cid+1)}}" data="{{i:item,l:l}}" wx:for="{{i.cn}}" wx:key="sid"></template>
+    </privacy-popup>
 </template>
 <template name="tmpl_0_8">{{i.v}}</template>
 <template name="tmpl_0_65">

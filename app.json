@@ -16,7 +16,8 @@
         "pages/user-set/index",
         "pages/webview/index",
         "pages/gogogo/index",
-        "pages/waiting/index"
+        "pages/waiting/index",
+        "pages/game-device/index"
     ],
     "window": {
         "backgroundTextStyle": "light",

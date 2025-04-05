@@ -1,0 +1,32 @@
+page {
+    background-color: #fff;
+}
+
+.device-content-p {
+    line-height: 1.75;
+}
+
+.device-content-p text {
+    color: var(--red);
+}
+
+.device-img-1 {
+    position: relative;
+    width: 320rpx;
+    margin: 0 auto;
+    border: 1rpx solid var(--gray-3);
+}
+
+.device-img-2,.device-img-3 {
+    position: relative;
+    width: 120rpx;
+}
+
+.device-img-2 {
+    width: 24rpx;
+    top: 12rpx;
+}
+
+.device-tips {
+    padding-bottom: 200rpx;
+}

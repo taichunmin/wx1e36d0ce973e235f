@@ -1,19 +1,21 @@
-(wx.webpackJsonp = wx.webpackJsonp || []).push([ [ 40 ], {
-    511: function(e, a, t) {
+(wx["webpackJsonp"] = wx["webpackJsonp"] || []).push([ [ 46 ], {
+    519: function _(e, a, t) {
+        "use strict";
         t.r(a);
-        var n = t(8), c = t(1), r = t(20), i = t.n(r), s = t(0);
+        var n = t(8), r = t(1), c = t(21), i = t.n(c), s = t(0);
         function o() {
-            var e = i.a.getData().src;
-            return Object(s.jsx)(c.h, {
-                src: e
+            var e = i.a.getData(), a = e.src;
+            return Object(s["jsx"])(r["h"], {
+                src: a
             });
         }
-        Page(Object(n.createPageConfig)(o, "pages/webview/index", {
+        var g = {
+            navigationBarTitleText: "外部页面"
+        };
+        Page(Object(n["createPageConfig"])(o, "pages/webview/index", {
             root: {
                 cn: []
             }
-        }, {
-            navigationBarTitleText: "外部页面"
-        } || {})), a.default = o;
+        }, g || {})), a["default"] = o;
     }
-}, [ [ 511, 0, 1, 2 ] ] ]);
+}, [ [ 519, 0, 1, 2 ] ] ]);

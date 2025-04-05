@@ -2,9 +2,9 @@
     transform: rotate(90deg);
     transition: transform .3s;
     transition: transform .3s,-webkit-transform .3s;
-    -webkit-transition: -webkit-transform var(--collapse-item-transition-duration,.3s);
-    transition: transform var(--collapse-item-transition-duration,.3s);
-    transition: transform var(--collapse-item-transition-duration,.3s),-webkit-transform var(--collapse-item-transition-duration,.3s);
+    -webkit-transition: -webkit-transform var(--collapse-item-transition-duration, .3s);
+    transition: transform var(--collapse-item-transition-duration, .3s);
+    transition: transform var(--collapse-item-transition-duration, .3s),-webkit-transform var(--collapse-item-transition-duration, .3s);
 }
 
 .van-collapse-item__title--expanded .van-cell__right-icon {
@@ -30,16 +30,16 @@
 }
 
 .van-collapse-item__content {
-    background-color: #fff;
-    background-color: var(--collapse-item-content-background-color,#fff);
     color: #969799;
     color: var(--collapse-item-content-text-color,#969799);
     font-size: 26rpx;
-    font-size: var(--collapse-item-content-font-size,26rpx);
+    font-size: var(--collapse-item-content-font-size, 26rpx);
     line-height: 1.5;
-    line-height: var(--collapse-item-content-line-height,1.5);
-    overflow: hidden;
+    line-height: var(--collapse-item-content-line-height, 1.5);
+    background-color: #fff;
+    background-color: var(--collapse-item-content-background-color,#fff);
     transition: all .3s ease-in-out;
+    overflow: hidden;
 }
 
 .van-collapse-item__content_wrapper {
@@ -60,9 +60,9 @@ page {
 }
 
 .van-collapse-item {
-    background-color: #fff;
-    border-radius: var(--border-radius-md);
     margin-bottom: 20rpx;
+    border-radius: var(--border-radius-md);
+    background-color: #fff;
 }
 
 .van-collapse-item:last-child {
@@ -70,8 +70,8 @@ page {
 }
 
 .van-collapse-item .van-collapse-item__title {
+    background-color: transparent;
     align-items: start;
-    background-color: initial;
 }
 
 .van-collapse-item .van-collapse-item__title::after {
@@ -79,7 +79,7 @@ page {
 }
 
 .van-collapse-item .van-collapse-item__content {
-    background-color: initial;
+    background-color: transparent;
 }
 
 .van-collapse-item .van-collapse-item__content_wrapper {
@@ -87,12 +87,12 @@ page {
 }
 
 .icon-cat {
+    top: 2rpx;
     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgY2xhc3M9Imljb24iIHZpZXdCb3g9IjAgMCAxMDI0IDEwMjQiPjxwYXRoIGZpbGw9IiNmZjJhMjMiIGQ9Ik01MTIgOTQ3LjJjLTIwMC41MzMgMC0yOTguNjY3IDAtMzY2LjkzMy02OC4yNjdDNzYuOCA4MTAuNjY3IDc2LjggNzA4LjI2NyA3Ni44IDUxMmMwLTIwMC41MzMgMC0yOTguNjY3IDY4LjI2Ny0zNjYuOTMzQzIxMy4zMzMgNzYuOCAzMTEuNDY3IDc2LjggNTEyIDc2LjhzMjk4LjY2NyAwIDM2Ni45MzMgNjguMjY3Qzk0Ny4yIDIxMy4zMzMgOTQ3LjIgMzE1LjczMyA5NDcuMiA1MTJjMCAyMDAuNTMzIDAgMjk4LjY2Ny02OC4yNjcgMzY2LjkzM0M4MTAuNjY3IDk0Ny4yIDcxMi41MzMgOTQ3LjIgNTEyIDk0Ny4yem0wLTgxMC42NjdjLTE4My40NjcgMC0yNzMuMDY3IDAtMzI0LjI2NyA1MS4yLTUxLjIgNTEuMi01MS4yIDE0MC44LTUxLjIgMzI0LjI2N3MwIDI3My4wNjcgNTEuMiAzMjQuMjY3YzUxLjIgNTEuMiAxNDAuOCA1MS4yIDMyNC4yNjcgNTEuMnMyNzMuMDY3IDAgMzI0LjI2Ny01MS4yYzUxLjItNTEuMiA1MS4yLTE0MC44IDUxLjItMzI0LjI2N3MwLTI3My4wNjctNTEuMi0zMjQuMjY3Yy01MS4yLTUxLjItMTQwLjgtNTEuMi0zMjQuMjY3LTUxLjJ6Ii8+PHBhdGggZmlsbD0iI2ZmMmEyMyIgZD0iTTUxMiA2MDUuODY3Yy0xNy4wNjcgMC0zNC4xMzMtMTIuOC0zNC4xMzMtMzQuMTM0di0xNy4wNjZjMC00Mi42NjcgMjkuODY2LTgxLjA2NyA1MS4yLTExMC45MzQgOC41MzMtOC41MzMgMTcuMDY2LTIxLjMzMyAyNS42LTI5Ljg2NiA0LjI2Ni04LjUzNCA4LjUzMy0xNy4wNjcgOC41MzMtMjkuODY3IDAtMjkuODY3LTI1LjYtNTEuMi01MS4yLTUxLjJzLTUxLjIgMjEuMzMzLTUxLjIgNTEuMmMwIDE3LjA2Ny0xMi44IDM0LjEzMy0zNC4xMzMgMzQuMTMzUzM5Mi41MzMgNDAxLjA2NyAzOTIuNTMzIDM4NGMwLTY0IDUxLjItMTE5LjQ2NyAxMTkuNDY3LTExOS40NjdTNjMxLjQ2NyAzMTUuNzMzIDYzMS40NjcgMzg0YzAgMjEuMzMzLTguNTM0IDQyLjY2Ny0xNy4wNjcgNjQtOC41MzMgMTIuOC0xNy4wNjcgMjUuNi0yOS44NjcgMzguNC0yMS4zMzMgMjUuNi0zOC40IDQ2LjkzMy0zOC40IDY4LjI2N1Y1NzZjMCAxNy4wNjctMTcuMDY2IDI5Ljg2Ny0zNC4xMzMgMjkuODY3ek01MTIgNzY4Yy0yNS42IDAtNDIuNjY3LTE3LjA2Ny00Mi42NjctNDIuNjY3UzQ4Ni40IDY4Mi42NjcgNTEyIDY4Mi42NjdzNDIuNjY3IDE3LjA2NiA0Mi42NjcgNDIuNjY2UzUzNy42IDc2OCA1MTIgNzY4eiIvPjwvc3ZnPg==);
     background-position: 50%;
     background-repeat: no-repeat;
     background-size: contain;
     height: 40rpx;
     position: relative;
-    top: 2rpx;
     width: 40rpx;
 }
