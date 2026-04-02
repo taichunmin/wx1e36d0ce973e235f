@@ -1,5 +1,5 @@
 page {
-    background-color: #f4f4f4;
+    background-color: #f4f4f4
 }
 
 .binding-list .item {
@@ -7,16 +7,16 @@ page {
     min-width: 0;
     word-wrap: break-word;
     text-align: center;
-    flex: 1 1 auto;
+    flex: 1 1 auto
 }
 
 .binding-list .item.add {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column
 }
 
 .binding-list .item.add .item-image {
-    margin: auto;
+    margin: auto
 }

@@ -1,6 +1,6 @@
 {
-    "component": true,
-    "usingComponents": {
-        "comp": "./comp"
-    }
+  "component": true,
+  "usingComponents": {
+    "comp": "comp"
+  }
 }

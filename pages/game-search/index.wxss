@@ -1,25 +1,29 @@
 .van-search {
+    display: -webkit-flex;
     display: flex;
+    -webkit-align-items: center;
     align-items: center;
     box-sizing: border-box;
     padding: 20rpx 24rpx;
-    padding: var(--search-padding,20rpx 24rpx);
+    padding: var(--search-padding,20rpx 24rpx)
 }
 
 .van-search__content {
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex: 1;
     flex: 1;
     padding-left: 24rpx;
     padding-left: var(--padding-sm,24rpx);
     border-radius: 4rpx;
     border-radius: var(--border-radius-sm,4rpx);
     background-color: #f7f8fa;
-    background-color: var(--search-background-color,#f7f8fa);
+    background-color: var(--search-background-color,#f7f8fa)
 }
 
 .van-search__content--round {
     border-radius: 999rpx;
-    border-radius: var(--border-radius-max,999rpx);
+    border-radius: var(--border-radius-max,999rpx)
 }
 
 .van-search__label {
@@ -30,20 +34,21 @@
     line-height: 68rpx;
     line-height: var(--search-input-height, 68rpx);
     color: #323233;
-    color: var(--search-label-color,#323233);
+    color: var(--search-label-color,#323233)
 }
 
 .van-search__field {
-    flex: 1;
+    -webkit-flex: 1;
+    flex: 1
 }
 
 .van-search__field__left-icon {
     color: #969799;
-    color: var(--search-left-icon-color,#969799);
+    color: var(--search-left-icon-color,#969799)
 }
 
 .van-search--withaction {
-    padding-right: 0;
+    padding-right: 0
 }
 
 .van-search__action {
@@ -54,30 +59,30 @@
     line-height: 68rpx;
     line-height: var(--search-input-height, 68rpx);
     color: #323233;
-    color: var(--search-action-text-color,#323233);
+    color: var(--search-action-text-color,#323233)
 }
 
 .van-search__action--hover {
     background-color: #f2f3f5;
-    background-color: var(--active-color,#f2f3f5);
+    background-color: var(--active-color,#f2f3f5)
 }
 
 .van-search .van-cell__title {
-    display: none;
+    display: none
 }
 
 .van-search .weui-input {
-    height: 100%;
+    height: 100%
 }
 
 page {
-    background-color: #f4f4f4;
+    background-color: #f4f4f4
 }
 
 .game-inner {
-    position: relative;
+    position: relative
 }
 
 .game-data-list .item .media {
-    border: 2rpx solid var(--gray-3);
+    border: 2rpx solid var(--gray-3)
 }

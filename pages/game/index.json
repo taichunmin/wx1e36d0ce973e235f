@@ -1,7 +1,7 @@
 {
-    "navigationBarTitleText": "数据",
-    "enablePullDownRefresh": true,
-    "usingComponents": {
-        "comp": "../../comp"
-    }
+  "navigationBarTitleText": "数据",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "comp": "../../comp"
+  }
 }

@@ -1,32 +1,36 @@
 .van-collapse-item__title .van-cell__right-icon {
+    -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
+    -webkit-transition: -webkit-transform .3s;
     transition: transform .3s;
     transition: transform .3s,-webkit-transform .3s;
     -webkit-transition: -webkit-transform var(--collapse-item-transition-duration, .3s);
+    transition: -webkit-transform var(--collapse-item-transition-duration, .3s);
     transition: transform var(--collapse-item-transition-duration, .3s);
-    transition: transform var(--collapse-item-transition-duration, .3s),-webkit-transform var(--collapse-item-transition-duration, .3s);
+    transition: transform var(--collapse-item-transition-duration, .3s),-webkit-transform var(--collapse-item-transition-duration, .3s)
 }
 
 .van-collapse-item__title--expanded .van-cell__right-icon {
-    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg)
 }
 
 .van-collapse-item__title--disabled .van-cell,.van-collapse-item__title--disabled .van-cell__right-icon {
     color: #c8c9cc!important;
-    color: var(--collapse-item-title-disabled-color,#c8c9cc)!important;
+    color: var(--collapse-item-title-disabled-color,#c8c9cc)!important
 }
 
 .van-collapse-item__title--disabled .van-cell--hover {
     background-color: #fff!important;
-    background-color: var(--white,#fff)!important;
+    background-color: var(--white,#fff)!important
 }
 
 .van-collapse-item__wrapper {
-    overflow: hidden;
+    overflow: hidden
 }
 
 .van-collapse-item__animation-box {
-    height: 0;
+    height: 0
 }
 
 .van-collapse-item__content {
@@ -38,52 +42,53 @@
     line-height: var(--collapse-item-content-line-height, 1.5);
     background-color: #fff;
     background-color: var(--collapse-item-content-background-color,#fff);
+    -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-    overflow: hidden;
+    overflow: hidden
 }
 
 .van-collapse-item__content_wrapper {
     padding: 30rpx;
-    padding: var(--collapse-item-content-padding,30rpx);
+    padding: var(--collapse-item-content-padding,30rpx)
 }
 
 page {
-    background-color: #f4f4f4;
+    background-color: #f4f4f4
 }
 
 .h5-p {
-    margin-top: 0;
+    margin-top: 0
 }
 
 .h5-p:last-child {
-    margin-bottom: 0;
+    margin-bottom: 0
 }
 
 .van-collapse-item {
     margin-bottom: 20rpx;
     border-radius: var(--border-radius-md);
-    background-color: #fff;
+    background-color: #fff
 }
 
 .van-collapse-item:last-child {
-    border-width: 0;
+    border-width: 0
 }
 
 .van-collapse-item .van-collapse-item__title {
     background-color: transparent;
-    align-items: start;
+    align-items: start
 }
 
 .van-collapse-item .van-collapse-item__title::after {
-    border-width: 0;
+    border-width: 0
 }
 
 .van-collapse-item .van-collapse-item__content {
-    background-color: transparent;
+    background-color: transparent
 }
 
 .van-collapse-item .van-collapse-item__content_wrapper {
-    padding-top: 0;
+    padding-top: 0
 }
 
 .icon-cat {
@@ -94,5 +99,5 @@ page {
     background-size: contain;
     height: 40rpx;
     position: relative;
-    width: 40rpx;
+    width: 40rpx
 }

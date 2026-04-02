@@ -1,6 +1,6 @@
 {
-    "navigationBarTitleText": "固件更新",
-    "usingComponents": {
-        "comp": "../../comp"
-    }
+  "navigationBarTitleText": "固件更新",
+  "usingComponents": {
+    "comp": "../../comp"
+  }
 }
